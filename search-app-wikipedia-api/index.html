@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./dist/css/style.min.css"/>
+    <title>Wikipedia Search Engine | Wikipedia API</title>
+</head>
+<body>
+    <main>
+        <h1 class="offscreen">A Wikipedia Powered Search Engine</h1>
+
+        <sction class="searchEntry">
+            <h2 class="offscreen">Search Term Entry</h2>
+            <div class="logo" aria-hidden="true">
+                <span class="blue">W</span>
+                <span class="red">I</span>
+                <span class="yellow">K</span>
+                <span class="green">I</span>
+                <span class="red">P</span>
+                <span class="blue">E</span>
+                <span class="yellow">D</span>
+                <span class="green">I</span>
+                <span class="blue">A</span>
+                <span class="red exclaim">!</span>
+            </div>
+
+            <form id="searchBar" class="searchBar">
+                <label for="search" class="offscreen">Enter a search term or phrase</label>
+                <input type="text" id="search" autocomplete="true"/>
+                <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="clear search terms">
+                    <i class="fas fa-times"></i>
+                </div>
+                <button id="searchButton" class="button searchButton" type="submit" aria-label="search button">
+                    <i class="fas fa-search blue"></i>
+                </button>
+            </form>
+        </sction>
+
+        <section class="results">
+            <h2 class="offscreen">Search Results</h2>
+            <div class="statsBar">
+                <div id="stats" class="stats" aria-live="assertive"></div>
+            </div>
+            <div id="searchResults" class="searchResults">
+                <div class="resultItem">
+                    <div class="resultTitle">
+                        <a href="">Car</a>
+                    </div>
+                    <div class="resultContents">
+                        <div class="resultImage">
+                            <img src="./image/testImage.jpg" width="100" alt="Car"/>
+                        </div>
+                        <div class="resultText">
+                            <p class="resultDescrition">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facere ad itaque voluptates accusamus reprehenderit quasi nisi aspernatur voluptate omnis?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><span aria-hidden="true">&lt;&lt;</span> Powered by <a href="https://www.wikipedia.org" target="_blank">wikipedia</a> <span aria-hidden="true">&gt;&gt;</span></p>
+    </footer>
+
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
